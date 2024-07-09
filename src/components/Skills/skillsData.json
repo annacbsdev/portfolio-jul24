@@ -1,0 +1,30 @@
+{
+  "languages": [
+    { "id": 1, "name": "HTML" },
+    { "id": 2, "name": "CSS" },
+    { "id": 3, "name": "JavaScript" },
+    { "id": 4, "name": "TypeScript" },
+    { "id": 5, "name": "Python" },
+    { "id": 6, "name": "Sass" },
+    { "id": 7, "name": "Less" }
+  ],
+  "frameworks": [
+    { "id": 1, "name": "Bootstrap" },
+    { "id": 2, "name": "jQuery" },
+    { "id": 3, "name": "React" },
+    { "id": 4, "name": "Vue" },
+    { "id": 5, "name": "Angular" },
+    { "id": 6, "name": "NextJS" },
+    { "id": 7, "name": "wordpress" }
+  ],
+  "tools": [
+    { "id": 1, "name": "Gulp" },
+    { "id": 2, "name": "Grunt" },
+    { "id": 3, "name": "Node.js" },
+    { "id": 4, "name": "Cypress" },
+    { "id": 5, "name": "Ajax" },
+    { "id": 6, "name": "Git" },
+    { "id": 7, "name": "GitHub" },
+    { "id": 8, "name": "Figma" }
+  ]
+}
