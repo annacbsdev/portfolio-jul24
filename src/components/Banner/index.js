@@ -1,19 +1,24 @@
 import styled from "styled-components";
-
+//ícones e imagens
 import { FiDownload } from "react-icons/fi";
 import homeBg from "../../assets/images/homeBG.png"
 import profile from "../../assets/images/profile.jpg"
 import line from "../../assets/images/line.png"
+//pdf e cores
+import pdfFile from "../../assets/curriculo.pdf"
 import { colors } from "../../globalStyles";
 
+//estilos
 const StyledBanner = styled.div`
 
-    background-image: url(${homeBg});
     display: flex;
     align-items: center;
     gap: 40px;
+
     margin-top: 90px;
 
+    background-image: url(${homeBg});
+    
     > img {
         height: 90vh;
         border: 3px solid black;
@@ -35,20 +40,28 @@ const StyledBanner = styled.div`
         font-size: 24px;
     }
     
-    button {
-        background-color: ${colors.orange};
-        border: 2px solid black;
-        border-radius: 24px;
-        padding: 8px 16px;
-        margin-top: 80px;
-        font-size: 24px;
+    a {
         display: flex;
         align-items: center;
+        justify-content: center;
         gap: 8px;
+        width: 24%;
+
+        padding: 8px 0;
+        margin-top: 80px;
+        border: 2px solid black;
+        border-radius: 24px;
+
+        font-size: 24px;
+        color: black;
+        text-decoration: none;
+
+        background-color: ${colors.orange};
     }
 
 `
 
+//componente Banner
 const Banner = () => {
     return (
         <StyledBanner>
@@ -58,7 +71,13 @@ const Banner = () => {
                 <p><b>olá! seja bem-vindo. eu sou a</b></p>
                 <h1>Anna Claudia Barros</h1>
                 <p className="title">desenvolvedora front-end  | web designer</p>
-                <button><FiDownload />currículo</button>
+                <a 
+                    href={pdfFile}
+                    download="curriculo_anna.pdf"
+                    className="download-button"
+                >
+                    <FiDownload />currículo
+                </a>
             </div>
         </StyledBanner>
     )

@@ -1,16 +1,19 @@
 import styled from "styled-components";
+//ícone, fundo e cores
 import { BsArrowRight } from "react-icons/bs";
-import { colors } from "../../globalStyles";
 import contactBG from "../../assets/images/contactBG.png"
+import { colors } from "../../globalStyles";
 
+//estilos
 const StyledContact = styled.div`   
+    padding: 40px 0 100px 40px;
+    
     background-image: url(${contactBG});
     background-size: cover;
-    padding: 40px 0 100px 40px;
 
     h1 {
-        font-size: 70px;
         margin: 80px 0 40px;
+        font-size: 70px;
     }
 
     div {
@@ -19,25 +22,30 @@ const StyledContact = styled.div`
 
         p {
             width: 400px;
-            background-color: ${colors.white};
-            font-size: 24px;
+            
             padding: 16px;
             border: 2px solid black;
             border-bottom-left-radius: 16px;
             border-top-left-radius: 16px;
+            
+            font-size: 24px;
+            background-color: ${colors.white};
         }
 
         a {
             display: flex;
             align-items: center;
-            background-color: ${colors.green};
+            
             padding: 0 30px;
             border: 2px solid black;
             border-left: none;
             border-bottom-right-radius: 16px;
             border-top-right-radius: 16px;
+
             color: black;
             cursor: pointer;
+
+            background-color: ${colors.green};
 
             .icon {
                 font-size: 40px;
@@ -49,6 +57,7 @@ const StyledContact = styled.div`
     }
 `
 
+//componente "Contato"
 const Contact = () => {
     return (
         <StyledContact>

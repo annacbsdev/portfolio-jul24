@@ -1,16 +1,20 @@
 import styled from "styled-components"
+//componentes e json das skills
 import SkillsCard from "./SkillsCard"
 import skillsData from './skillsData.json'
-import { colors } from "../../globalStyles"
+//ícone e cores
 import { FaCertificate } from "react-icons/fa6";
+import { colors } from "../../globalStyles"
 
+//estilos
 const SkillsContainer = styled.div`
     max-width: 1024px;
     width: 100%;
-    margin: 0 auto;
     display: flex;
     justify-content: space-around;
-    gap: 16px;
+    gap: 40px;
+
+    margin: 0 auto;
 `
 
 const StyledSkills = styled.div`
@@ -21,8 +25,8 @@ const StyledSkills = styled.div`
     justify-content: center;
 
     > h1 {
-        font-size: 48px;
         margin: 40px 0 80px;
+        font-size: 48px;
     }
 
     .icon {
@@ -31,6 +35,7 @@ const StyledSkills = styled.div`
     }
 `
 
+//componente "Habilidades"
 const Skills = () => { 
 
     

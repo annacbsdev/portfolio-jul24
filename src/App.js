@@ -1,6 +1,8 @@
 import { useRef, useState, useEffect } from "react";
-import Header from "./components/Header";
+//estilo global
 import GlobalStyle from "./globalStyles";
+//componentes
+import Header from "./components/Header";
 import Banner from "./components/Banner"
 import About from "./components/About"
 import Skills from "./components/Skills";
@@ -10,6 +12,7 @@ import Footer from "./components/Footer";
 
 function App() {
 
+  // Para aplicar dinâmica à barra de navegação
   const [activeSection, setActiveSection] = useState("home");
   const bannerRef = useRef(null);
   const aboutRef = useRef(null);
@@ -47,6 +50,7 @@ function App() {
       });
     };
   }, []);
+
 
   return (
     <div className="App">

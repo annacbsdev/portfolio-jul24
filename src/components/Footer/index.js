@@ -1,16 +1,18 @@
 import styled from "styled-components"
 import { colors } from "../../globalStyles"
 
+//estilos
 const StyledFooter = styled.footer`
     background-color: ${colors.orange};
-    height: 20vh;
+    padding: 16px 0;
+    text-align: center;
 `
 
+//componente "Rodapé"
 const Footer = () => {
     return (
         <StyledFooter>
-            <p>Anna Claudia - 2024</p>
-            <p>Ver repositório do portfólio</p>
+            <p> &copy; 2024 - Anna Claudia Barros - <a href="https://github.com/annacbsdev/portfolio-jul24" target="blank">Ver repositório desse projeto</a></p>
         </StyledFooter>
     )
 }

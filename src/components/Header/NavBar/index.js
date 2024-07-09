@@ -1,11 +1,12 @@
 import styled from "styled-components"
 import { Link as ScrollLink } from "react-scroll";
 
+//estilos
 const StyledNavBar = styled.nav`
+    width: 60%;
     border: 2px solid black;
     border-radius: 24px;
-    width: 60%;
-
+    
     ul {
         display: flex;
         justify-content: space-between;
@@ -14,13 +15,16 @@ const StyledNavBar = styled.nav`
         li {
             cursor: pointer;
 
+            &:hover,
             &.active {
-            font-weight: bold;
+              font-weight: bold;
             }
+
         }
     }
 `
 
+//Componente "Barra de navegação"
 const NavBar = ({ activeSection }) => {
     return (
         <StyledNavBar>

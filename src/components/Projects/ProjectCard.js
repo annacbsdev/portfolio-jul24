@@ -1,41 +1,49 @@
 import styled from "styled-components"
 import { colors } from "../../globalStyles"
 
+//estilos
 const StyledProjectCard = styled.div`
-    width: 400px;
-    background-color: ${colors.white};
+    width: 360px;
     border: 2px solid black;
+    background-color: ${colors.white};
+    cursor: pointer;
+
+    &:hover{
+        transform: scale(1.10);
+    }
     
     img{
         width: 100%;
         height: 280px;
         object-fit: cover;
+        border-bottom: 2px solid black;
     }
 
     h1 {
-        font-size: 16px;
+        padding: 8px 0 16px;
         text-align: center;
-        border-top: 2px solid black;
-        padding: 16px 0;
+        font-size: 16px;
     }
 
     ul{
         display: flex;
-        gap: 8px;
         justify-content: center;
+        gap: 8px;
         padding-bottom: 16px;
 
         li {
-            background-color: ${colors.yellow};
             padding: 4px 8px;
             border-radius: 8px;
+            font-size: 14px;
+            background-color: ${colors.yellow};
         }
     }
 `
 
-const ProjectCard = ({image, alt, title, skills}) => {
+//componente "Card de Projeto"
+const ProjectCard = ({image, alt, title, skills, onClick}) => {
     return (
-        <StyledProjectCard>
+        <StyledProjectCard onClick={onClick}>
             <img src={image} alt={alt}/>
             <h1>{title}</h1>
             <ul>

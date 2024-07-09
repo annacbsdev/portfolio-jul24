@@ -4,11 +4,11 @@ import { colors } from '../../../globalStyles'
 
 //estilos
 const StyledNotificationBar = styled.div`
-    background-color: ${colors.green};
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 4px 0;
+    background-color: ${colors.green};
 
     img {
         width: 24px;

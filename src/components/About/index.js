@@ -1,16 +1,22 @@
 import styled from "styled-components"
+//imagem de fundo e cores
 import aboutBG from "../../assets/images/aboutBG.png"
 import { colors } from "../../globalStyles"
 
+//estilos
 const StyledAbout = styled.div`
     height: 70vh;
-    background-image: url(${aboutBG});
-    background-size: cover;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
 
+    background-image: url(${aboutBG});
+    background-size: cover;
+
     h1 {
+        margin-left: 80px;
+        padding-top: 300px;
+        
         font-family: 'Margin', sans-serif;
         font-size: 100px;
         font-weight: normal;
@@ -19,8 +25,6 @@ const StyledAbout = styled.div`
                     2px -2px 0 ${colors.pink}, 
                     -2px 2px 0 ${colors.pink},  
                     2px 2px 0 ${colors.pink};
-        margin-left: 80px;
-        padding-top: 300px;
     }
 
     p {
@@ -30,6 +34,7 @@ const StyledAbout = styled.div`
     }
 `
 
+//componente "Sobre"
 const About = () => {
     return (
         <StyledAbout>
