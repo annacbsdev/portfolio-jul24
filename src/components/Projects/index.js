@@ -23,9 +23,9 @@ const StyledProjects = styled.div`
         gap: 80px;
         
         padding: 40px 0;
+        margin-left: 40px;
 
         h1 {
-            margin-left: 40px;
             font-family: 'Margin', sans-serif;
             font-size: 100px;
             font-weight: normal;
@@ -98,6 +98,29 @@ const StyledProjects = styled.div`
         .icon {
             font-size: 60px;
             margin-bottom: 24px;
+        }
+    }
+
+    @media (max-width: 1024px ){
+        .projectsHeader {
+            flex-direction: column;
+            gap: 0;
+            margin-left: 0;
+            h1{
+                font-size: 64px;
+                margin-bottom: 24px;
+            }
+            input {
+                font-size: 16px;
+                width: 90%;
+            }
+        }
+
+        .noResultsFound {
+            font-size: 18px;
+            .icon {
+                font-size: 40px;
+            }
         }
     }
 

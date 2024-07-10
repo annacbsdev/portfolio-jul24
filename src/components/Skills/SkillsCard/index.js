@@ -41,7 +41,7 @@ const StyledUl = styled.ul`
   background-color: ${(props) => props.bgColor};
 
   li {
-      padding: 8px 16px;
+      padding: 8px 12px;
       border: 2px solid black;
       border-radius: 24px;
 

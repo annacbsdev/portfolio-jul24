@@ -12,17 +12,28 @@ const SkillsContainer = styled.div`
     width: 100%;
     display: flex;
     justify-content: space-around;
+    align-items:center;
     gap: 40px;
+    flex-wrap: wrap;
 
     margin: 0 auto;
+
+
+    @media (max-width: 767px) {
+        flex-direction: column;
+        width: 90%;
+    }
 `
 
 const StyledSkills = styled.div`
-    height: 80vh;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 40px 0;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
 
     > h1 {
         margin: 40px 0 80px;
@@ -32,6 +43,16 @@ const StyledSkills = styled.div`
     .icon {
         font-size: 60px;
         color: ${colors.pink};
+    }
+
+    @media (max-width: 767px) {
+        > h1 {
+            font-size: 36px;
+        }
+
+        .icon {
+            font-size: 40px;
+        }
     }
 `
 

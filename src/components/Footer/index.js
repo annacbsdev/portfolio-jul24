@@ -6,6 +6,13 @@ const StyledFooter = styled.footer`
     background-color: ${colors.orange};
     padding: 16px 0;
     text-align: center;
+
+    @media (max-width: 767px) {
+        font-size: 14px;
+        a {
+            display: block;
+        }
+    }
 `
 
 //componente "Rodapé"

@@ -51,9 +51,32 @@ const StyledContact = styled.div`
                 font-size: 40px;
             }
         }
-
-
         
+    }
+
+    @media (max-width: 1024px) {
+
+        padding: 16px;
+
+        h1{
+            font-size: 24px;
+            margin: 16px 0;
+        }
+        div{
+
+            p {
+                font-size: 16px;
+                width: 240px;
+                padding: 12px;
+            }
+
+            a{
+                padding: 0 16px ;
+                .icon{
+                    font-size: 24px;
+                }
+            }
+        }
     }
 `
 
