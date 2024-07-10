@@ -27,7 +27,7 @@ const StyledProjectModal = styled.div`
 
     .modalContent {
         
-        width: 50%;
+        width: 70%;
         height: 50%;
         z-index: 2;
         overflow: auto;
@@ -41,7 +41,7 @@ const StyledProjectModal = styled.div`
         background-color: ${colors.white};
 
         img {
-            width: 400px;
+            width: 50%;
             height: 100%;
             object-fit: cover;
             border: 2px solid black;
@@ -58,11 +58,11 @@ const StyledProjectModal = styled.div`
         }
 
         &__text{
-            height: 80%;
+            height: 100%;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-
+            padding: 24px 0;
             ul {
                 display: flex;
                 gap: 8px;
@@ -86,7 +86,7 @@ const StyledProjectModal = styled.div`
                     color: black;
                     border: 2px solid black;
                     border-radius: 24px;
-                    width: 40%;
+                    width: 300px;
                     text-align: center;
                     font-weight: bold;
                   }
@@ -96,6 +96,61 @@ const StyledProjectModal = styled.div`
                   }
             }
         }
+    }
+
+    @media (max-width: 1024px) {
+      .modalContent {
+        width: 80%;
+        height: 40%;
+        gap: 16px;
+
+        .modalButtons {
+          a {
+            width: 200px;
+          }
+        }
+
+        &__text {
+          padding: 0;
+          h1 {
+            font-size: 18px;
+            text-align: center;
+          }
+          p {
+            font-size: 14px;
+          }
+          ul{
+            justify-content: center;
+            margin-top: 8px;
+          }
+        }
+      }
+    }
+
+    @media (max-width: 767px) {
+      .modalContent{
+        flex-direction: column;
+        height: 70vh;
+        img {
+          width: 100%;
+          height: 50%;
+          margin-top: 24px;
+        }
+        &__text {
+          align-items: center;
+          p {
+            width: 80%;
+            text-align: center;
+          }
+        }
+        .modalButtons {
+          a {
+            width: 120px;
+            font-size: 14px;
+            padding: 4px 0;
+          }
+        }
+      }  
     }
 
 `;

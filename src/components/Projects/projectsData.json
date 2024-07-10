@@ -15,7 +15,7 @@
       "site": "https://exercicio-ajax-kappa.vercel.app",
       "image": "https://raw.githubusercontent.com/annacbsdev/portfolio-images/main/github.png",
       "technologies": ["HTML", "CSS", "JavaScript", "jQuery"],
-      "description": "Site para pesquisar usuários do GitHub e suas informações. Implementação do AJAX para requisições assíncronas da API do GitHub. O site funciona por uma barra de pesquisa com o nome do usuário, que o localiza e exibe suas informações dinamicamente."
+      "description": "Site para pesquisar usuários do GitHub e suas informações. Implementação do AJAX para requisições assíncronas da API do GitHub."
     },
     {
       "id": 3,
